@@ -49,7 +49,7 @@ The registration section includes:
 - Email address field
 - Optional phone number field
 - Accra, Ghana contact details
-- Client-side success state after form submission
+- Native Formspree submission flow
 
 ### Responsive layout
 
@@ -186,7 +186,7 @@ For continuous deployment, connect the GitHub repository to Netlify and configur
 
 ## Registration form limitation
 
-The form is connected to Formspree using the endpoint configured in `index.html`. Successful submissions are sent to the connected Formspree account, and the page displays a confirmation state. Failed requests display an error state and allow the visitor to retry.
+The form is connected to Formspree using the endpoint configured in `index.html`. It uses a native HTML `POST` submission, so Formspree receives the visitor's name, email, phone number, and optional message directly.
 
 Before using the form for a public campaign, verify the Formspree dashboard settings, notification email, spam controls, submission limits, and privacy requirements.
 
