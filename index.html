@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pure Seduction | Registration</title>
+    <meta
+      name="description"
+      content="Register for Victoria's Secret Pure Seduction fragrance updates, offers, and local delivery in Accra."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero" id="register">
+        <nav class="nav container" aria-label="Main navigation">
+          <a class="brand" href="#register" aria-label="Pure Seduction home">
+            <span class="brand-mark">VS</span>
+            <span class="brand-copy">Pure <em>Seduction</em></span>
+          </a>
+          <a class="nav-link" href="#collection">Explore collection <span>↗</span></a>
+        </nav>
+
+        <div class="hero-inner container">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> Victoria's Secret fragrance collection</p>
+            <h1>Feel fresh.<br /><em>Feel irresistible.</em></h1>
+            <p class="hero-description">
+              Be the first to discover new drops, exclusive offers, and beautiful
+              self-care moments from the iconic Pure Seduction collection.
+            </p>
+            <a class="button button-primary" href="#registration-form">Register your interest <span>→</span></a>
+            <div class="trust-row">
+              <div class="avatars" aria-hidden="true">
+                <span>J</span><span>A</span><span>M</span>
+              </div>
+              <p><strong>Join 200+ fragrance lovers</strong><br />in Accra and beyond</p>
+            </div>
+          </div>
+
+          <div class="hero-art">
+            <div class="product-stage">
+              <div class="stage-copy">
+                <span>Pure Seduction</span>
+                <em>the signature scent</em>
+              </div>
+              <img
+                class="collection-image"
+                src="pure-seduction-collection.png"
+                alt="Victoria's Secret Pure Seduction fragrance mist, lotion, and refreshing gel body wash"
+              />
+              <div class="stage-note">Feel fresh.<br /><strong>Feel feminine.</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="collection" id="collection">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow dark"><span></span> One signature scent</p>
+            <h2>Your everyday <em>ritual, elevated.</em></h2>
+            <p>Layer your favorite fragrance from first spritz to final touch.</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon">✿</div>
+              <h3>Pure Seduction</h3>
+              <p>A soft, feminine scent that leaves a memorable impression.</p>
+            </article>
+            <article class="feature-card featured">
+              <div class="feature-icon">♧</div>
+              <h3>Fragrance Mist</h3>
+              <p>Light, refreshing fragrance for a beautiful all-day glow.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">◌</div>
+              <h3>Body Care</h3>
+              <p>Hydrate, refresh, and carry the signature scent with you.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="register-section" id="registration-form">
+        <div class="container register-layout">
+          <div class="register-copy">
+            <p class="eyebrow light"><span></span> Stay in the know</p>
+            <h2>Make room for<br /><em>something beautiful.</em></h2>
+            <p>Register today for launch updates, curated recommendations, and special offers delivered straight to you.</p>
+            <div class="contact-line"><span>☎</span> +233 54 123 4567 <i></i> <span>⌖</span> Accra, Ghana</div>
+          </div>
+          <form class="registration-form" id="registrationForm">
+            <div class="form-header">
+              <p class="form-kicker">Registration</p>
+              <h3>Get first access.</h3>
+              <p>Tell us where to send your Pure Seduction updates.</p>
+            </div>
+            <label>
+              Full name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email address
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Phone number <span class="optional">(optional)</span>
+              <input type="tel" name="phone" placeholder="+233 ..." />
+            </label>
+            <button class="button button-submit" type="submit">Complete registration <span>→</span></button>
+            <p class="form-note">By registering, you agree to receive Pure Seduction updates. Unsubscribe anytime.</p>
+            <p class="success-message" role="status" hidden>You're on the list — we'll be in touch soon.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <p>Pure <em>Seduction</em></p>
+        <p>Look good. Feel amazing.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
