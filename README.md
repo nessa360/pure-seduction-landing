@@ -186,36 +186,27 @@ For continuous deployment, connect the GitHub repository to Netlify and configur
 
 ## Registration form limitation
 
-The current form is front-end only. It displays a successful registration state in the browser, but it does not currently:
+The form is connected to Formspree using the endpoint configured in `index.html`. Successful submissions are sent to the connected Formspree account, and the page displays a confirmation state. Failed requests display an error state and allow the visitor to retry.
 
-- Store submissions
-- Send email notifications
-- Connect to a customer database
-- Validate submissions on a server
-- Protect against spam
+Before using the form for a public campaign, verify the Formspree dashboard settings, notification email, spam controls, submission limits, and privacy requirements.
 
-Before using the form for real customers, connect it to a form provider or backend.
+### Form endpoint
 
-### Possible form integrations
+The current endpoint is:
 
-#### Netlify Forms
+```text
+https://formspree.io/f/mdeeprrl
+```
 
-Add the required Netlify form attributes to the `<form>` element and deploy through Netlify.
+To replace it, update the `action` attribute on the registration form in `index.html`.
 
-#### Formspree
+### Production considerations
 
-Replace the form action with a Formspree endpoint and configure the form fields in the Formspree dashboard.
-
-#### Custom backend
-
-Submit the form data to an API endpoint and implement:
-
-- Server-side validation
-- Secure storage
-- Email notification handling
-- Rate limiting
-- Spam prevention
-- Privacy and consent management
+- Confirm the notification recipient in Formspree.
+- Add a privacy policy and explicit consent language where required.
+- Configure spam protection and submission limits.
+- Add server-side or provider-side validation for any new fields.
+- Avoid placing private API keys or secrets in this static repository.
 
 ## Customization
 

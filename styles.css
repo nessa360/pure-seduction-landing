@@ -111,6 +111,7 @@ h1 em, h2 em { color: #ffe4f1; font-style: italic; }
 .button-submit { width: 100%; margin-top: 27px; padding: 16px 20px; color: white; background: var(--berry); }
 .form-note { margin: 15px 0 0; color: #a38d9c; font-size: 10px; line-height: 1.5; text-align: center; }
 .success-message { margin: 14px 0 0; color: #8c0b59; font-size: 13px; font-weight: 700; text-align: center; }
+.error-message { margin: 14px 0 0; color: #b4235d; font-size: 13px; font-weight: 700; line-height: 1.4; text-align: center; }
 
 footer { color: rgba(255,255,255,.75); background: #28051e; }
 .footer-inner { display: flex; justify-content: space-between; padding: 25px 0; font-size: 11px; letter-spacing: .04em; }
